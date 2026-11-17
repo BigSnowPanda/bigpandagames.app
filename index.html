@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Big Panda Games</title>
+<meta name="description" content="Big Panda Games makes colorful bubble shooter and puzzle games for iPhone, iPad and Android.">
+<link rel="icon" href="/favicon.svg">
+<style>
+  :root { --bg: #f7f5fb; --card: #ffffff; --fg: #1d1d1f; --muted: #5f6368; --accent: #6a3fb5; --rule: #e3e0ec; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121214; --card: #1c1c21; --fg: #ececf1; --muted: #a0a0aa; --accent: #b89cff; --rule: #2c2c33; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  header { background: linear-gradient(135deg, #2b1055 0%, #6a3fb5 60%, #b44fa8 100%); color: #fff;
+           padding: 56px 16px 64px; text-align: center; }
+  header .logo { font-size: 64px; line-height: 1; }
+  header h1 { margin: 12px 0 6px; font-size: 2.4rem; letter-spacing: .5px; }
+  header p { margin: 0 auto; max-width: 560px; opacity: .9; font-size: 1.1rem; }
+  main { max-width: 880px; margin: -32px auto 0; padding: 0 16px 48px; }
+  .games { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+  .game { background: var(--card); border: 1px solid var(--rule); border-radius: 18px; padding: 20px;
+          text-align: center; box-shadow: 0 4px 16px rgba(40, 20, 80, .08); }
+  .game img { width: 112px; height: 112px; border-radius: 24px; display: block; margin: 0 auto 12px; }
+  .game h2 { font-size: 1.05rem; margin: 0 0 12px; }
+  .stores { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+  .stores a { font-size: .85rem; text-decoration: none; color: #fff; background: #1d1d1f; border-radius: 999px;
+              padding: 6px 14px; }
+  .stores a.play { background: #01875f; }
+  section.about { margin-top: 40px; color: var(--muted); }
+  section.about h2 { color: var(--fg); font-size: 1.2rem; }
+  a { color: var(--accent); }
+  footer { border-top: 1px solid var(--rule); padding: 24px 16px; text-align: center; color: var(--muted); font-size: .9rem; }
+  footer a { margin: 0 8px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">🐼</div>
+  <h1>Big Panda Games</h1>
+  <p>Colorful bubble shooters and puzzle games for the whole family.</p>
+</header>
+<main>
+  <div class="games">
+    <div class="game">
+      <img src="/img/tbs.jpg" alt="Transylvania Bubble Shooter icon">
+      <h2>Transylvania Bubble Shooter</h2>
+      <div class="stores">
+        <a href="https://apps.apple.com/app/id1152983015">App Store</a>
+        <a class="play" href="https://play.google.com/store/apps/details?id=com.bigpandagames.tbs">Google Play</a>
+      </div>
+    </div>
+    <div class="game">
+      <img src="/img/polar.jpg" alt="Polar Bear Bubble Shooter icon">
+      <h2>Polar Bear Bubble Shooter</h2>
+      <div class="stores"><a href="https://apps.apple.com/app/id1176163835">App Store</a></div>
+    </div>
+    <div class="game">
+      <img src="/img/alice.jpg" alt="Witch Alice in Magic Forest icon">
+      <h2>Witch Alice in Magic Forest</h2>
+      <div class="stores"><a href="https://apps.apple.com/app/id1370823369">App Store</a></div>
+    </div>
+    <div class="game">
+      <img src="/img/girl.jpg" alt="Bubble Girl Superhero icon">
+      <h2>Bubble Girl Superhero</h2>
+      <div class="stores"><a href="https://apps.apple.com/app/id1322663806">App Store</a></div>
+    </div>
+  </div>
+
+  <section class="about">
+    <h2>About us</h2>
+    <p>Big Panda Games is a small independent studio making casual games since 2015.
+    Our games are free to play, have no accounts or chat, and are safe for kids.
+    More of our games are coming back to Google Play soon.</p>
+  </section>
+</main>
+<footer>
+  © 2015–2026 Big Panda Games
+  <br>
+  <a href="/privacy/">Privacy Policy</a>
+  <a href="mailto:bigpandagames@gmail.com">bigpandagames@gmail.com</a>
+</footer>
+</body>
+</html>
